@@ -191,11 +191,7 @@
       background: linear-gradient(180deg, #ffe4ef, #ffd3e7);
     }
 
-    /* ticket animation */
-    .ticket-anim {
-      animation: tearTicket 0.6s ease forwards;
-    }
-
+    .ticket-anim { animation: tearTicket 0.6s ease forwards; }
     @keyframes tearTicket {
       0% { transform: scale(1) rotate(0deg); opacity:1; }
       40% { transform: scale(1.05) rotate(-2deg); }
@@ -203,18 +199,9 @@
       100% { transform: translateY(20px) scale(0.9) rotate(6deg); opacity:0; }
     }
 
-    .btn-secondary {
-      background: linear-gradient(180deg, #f8f5ff, #ece6ff);
-    }
-
-    .btn-third {
-      background: linear-gradient(180deg, #e8faf2, #d8f2e8);
-    }
-
-    .floating-btn {
-      position: relative;
-      width: 100%;
-    }
+    .btn-secondary { background: linear-gradient(180deg, #f8f5ff, #ece6ff); }
+    .btn-third { background: linear-gradient(180deg, #e8faf2, #d8f2e8); }
+    .floating-btn { position: relative; width: 100%; }
 
     .scroll-hint {
       display: flex;
@@ -256,13 +243,7 @@
       opacity: 0.65;
     }
 
-    .title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
+    .title-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; }
 
     .title-row h2 {
       margin: 0;
@@ -283,12 +264,7 @@
       transform: rotate(2deg);
     }
 
-    .message-box {
-      line-height: 1.72;
-      color: var(--text);
-      font-size: 0.99rem;
-    }
-
+    .message-box { line-height: 1.72; color: var(--text); font-size: 0.99rem; }
     .message-box p { margin: 0 0 12px; }
 
     .meme-frame {
@@ -299,13 +275,7 @@
       box-shadow: inset 0 0 0 4px rgba(255,255,255,0.6);
     }
 
-    .meme-frame img {
-      display: block;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-    }
+    .meme-frame img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
 
     .meme-caption {
       padding: 12px 12px 14px;
@@ -315,137 +285,49 @@
       background: linear-gradient(180deg, #fffafc, #fff2f7);
     }
 
-    /* marcador tipo plumón */
-    .marker-text {
-      position: relative;
-      display: inline-block;
-      font-weight: 700;
-      color: #5b4b61;
-      z-index: 0;
-    }
+    .marker-text { position: relative; display: inline-block; font-weight: 700; color: #5b4b61; z-index: 0; }
     .marker-text::before {
       content: "";
       position: absolute;
-      left: -6px;
-      right: -6px;
-      top: 50%;
-      height: 0.9em;
+      left: -6px; right: -6px; top: 50%; height: 0.9em;
       transform: translateY(-50%) rotate(-1.5deg);
       background: linear-gradient(90deg, #ffe27a, #ffd96a);
       border-radius: 10px 14px 12px 10px;
       box-shadow: 0 2px 0 rgba(255,217,106,0.6), 0 0 0 2px rgba(255,217,106,0.25) inset;
-      opacity: 0.9;
-      z-index: -1;
+      opacity: 0.9; z-index: -1;
     }
 
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
     .chip {
-      padding: 8px 11px;
-      font-size: 0.82rem;
-      color: #6d5e74;
-      background: #fff;
+      padding: 8px 11px; font-size: 0.82rem; color: #6d5e74; background: #fff;
       border: 2px solid rgba(138,115,145,0.22);
-      border-radius: 999px 920px 860px 900px;
-      transform: rotate(-1deg);
-    }
-
-    .terminal {
-      border-radius: 22px 18px 24px 18px;
-      overflow: hidden;
-      background: #fffdf9;
-      border: 3px solid rgba(138,115,145,0.28);
-    }
-
-    .terminal-top {
-      display: flex;
-      gap: 7px;
-      padding: 10px 12px;
-      background: #fbeef4;
-      border-bottom: 2px dashed rgba(138,115,145,0.18);
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #f0c1d2;
-      border: 1px solid rgba(138,115,145,0.18);
-    }
-
-    .terminal-body {
-      padding: 14px 14px 16px;
-      font-family: "Courier New", monospace;
-      white-space: pre-wrap;
-      line-height: 1.68;
-      color: #60756b;
-      font-size: 0.86rem;
-      background: linear-gradient(180deg, #fffdf9, #fff7fb);
+      border-radius: 999px 920px 860px 900px; transform: rotate(-1deg);
     }
 
     .coupon {
-      position: relative;
-      padding: 18px;
-      border-radius: 24px 18px 26px 16px;
+      position: relative; padding: 18px; border-radius: 24px 18px 26px 16px;
       background: linear-gradient(135deg, #fff4cd, #fff7e4 45%, #fffdf9 100%);
-      border: 3px dashed rgba(138,115,145,0.38);
-      overflow: hidden;
+      border: 3px dashed rgba(138,115,145,0.38); overflow: hidden;
     }
 
     .coupon::before,
     .coupon::after {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background: var(--bg-soft);
-      top: calc(50% - 12px);
+      content: ""; position: absolute; width: 24px; height: 24px; border-radius: 50%;
+      background: var(--bg-soft); top: calc(50% - 12px);
       border: 3px solid rgba(138,115,145,0.08);
     }
 
     .coupon::before { left: -14px; }
     .coupon::after { right: -14px; }
 
-    .coupon h3 {
-      margin: 0 0 8px;
-      font-size: 1.1rem;
-      font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
-      color: #6a5b70;
-    }
-
-    .coupon p {
-      margin: 0 0 10px;
-      line-height: 1.62;
-      color: #6c6453;
-    }
-
+    .coupon h3 { margin: 0 0 8px; font-size: 1.1rem; font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif; color: #6a5b70; }
+    .coupon p { margin: 0 0 10px; line-height: 1.62; color: #6c6453; }
     .coupon small { color: #8d7c57; }
 
-    .hidden {
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: max-height 0.7s ease, opacity 0.45s ease, margin-top 0.45s ease;
-      margin-top: 0;
-    }
+    .hidden { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.7s ease, opacity 0.45s ease, margin-top 0.45s ease; margin-top: 0; }
+    .hidden.show { max-height: 900px; opacity: 1; margin-top: 14px; }
 
-    .hidden.show {
-      max-height: 900px;
-      opacity: 1;
-      margin-top: 14px;
-    }
-
-    .divider {
-      height: 2px;
-      margin: 6px 0 2px;
-      background: repeating-linear-gradient(90deg, rgba(138,115,145,0.2) 0 10px, transparent 10px 18px);
-    }
+    .divider { height: 2px; margin: 6px 0 2px; background: repeating-linear-gradient(90deg, rgba(138,115,145,0.2) 0 10px, transparent 10px 18px); }
 
     .final-card {
       padding: 20px 18px 22px;
@@ -454,22 +336,11 @@
       border: 2px dashed rgba(138,115,145,0.22);
     }
 
-    .footer {
-      text-align: center;
-      color: #8d7c95;
-      font-size: 0.82rem;
-      padding: 8px 8px 4px;
-    }
+    .footer { text-align: center; color: #8d7c95; font-size: 0.82rem; padding: 8px 8px 4px; }
 
     .float-emoji {
-      position: fixed;
-      bottom: -40px;
-      pointer-events: none;
-      font-size: 22px;
-      z-index: 1;
-      opacity: 0;
-      animation: floatUp linear forwards;
-      filter: drop-shadow(0 4px 8px rgba(175, 148, 170, 0.18));
+      position: fixed; bottom: -40px; pointer-events: none; font-size: 22px; z-index: 1; opacity: 0;
+      animation: floatUp linear forwards; filter: drop-shadow(0 4px 8px rgba(175, 148, 170, 0.18));
     }
 
     @keyframes floatUp {
@@ -480,28 +351,11 @@
 
     .tiny { font-size: 0.83rem; color: var(--muted); }
 
-    .scribble {
-      display: inline-block;
-      position: relative;
-      font-weight: 800;
-    }
-
-    .scribble .wrong {
-      position: relative;
-      display: inline-block;
-      opacity: 0.82;
-    }
-
+    .scribble { display: inline-block; position: relative; font-weight: 800; }
+    .scribble .wrong { position: relative; display: inline-block; opacity: 0.82; }
     .scribble .wrong::after {
-      content: "";
-      position: absolute;
-      left: -2px;
-      right: -2px;
-      top: 50%;
-      height: 3px;
-      background: #ff94b5;
-      transform: rotate(-7deg);
-      border-radius: 8px;
+      content: ""; position: absolute; left: -2px; right: -2px; top: 50%; height: 3px;
+      background: #ff94b5; transform: rotate(-7deg); border-radius: 8px;
     }
 
     .reveal { opacity: 0; }
@@ -512,48 +366,77 @@
       box-shadow: 0 16px 40px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.04);
     }
 
-    .serious-panel::after {
-      background: rgba(255,255,255,0.08);
-      opacity: 0.28;
-    }
-
-    .serious-panel .title-row h2 {
-      color: #f4f1ff;
-      font-family: Inter, "Segoe UI", sans-serif;
-      letter-spacing: -0.02em;
-    }
-
-    .serious-panel .tag {
-      background: rgba(255,255,255,0.08);
-      color: #d8d1ea;
-      border-color: rgba(255,255,255,0.14);
-      transform: none;
-    }
-
-    .serious-panel .meme-frame {
-      background: #0f0f14;
-      border-color: rgba(255,255,255,0.12);
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03), 0 14px 30px rgba(0,0,0,0.28);
-    }
-
-    .serious-panel .meme-frame img {
-      filter: saturate(0.92) contrast(1.02);
-    }
-
-    .serious-panel .message-box {
-      color: #ece8f7;
-    }
-
+    .serious-panel::after { background: rgba(255,255,255,0.08); opacity: 0.28; }
+    .serious-panel .title-row h2 { color: #f4f1ff; font-family: Inter, "Segoe UI", sans-serif; letter-spacing: -0.02em; }
+    .serious-panel .tag { background: rgba(255,255,255,0.08); color: #d8d1ea; border-color: rgba(255,255,255,0.14); transform: none; }
+    .serious-panel .meme-frame { background: #0f0f14; border-color: rgba(255,255,255,0.12); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03), 0 14px 30px rgba(0,0,0,0.28); }
+    .serious-panel .meme-frame img { filter: saturate(0.92) contrast(1.02); }
+    .serious-panel .message-box { color: #ece8f7; }
     .serious-note {
-      margin-top: 14px;
-      padding: 12px 14px;
-      border-left: 3px solid rgba(255,255,255,0.22);
+      margin-top: 14px; padding: 12px 14px; border-left: 3px solid rgba(255,255,255,0.22);
       background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-      border-radius: 0 14px 14px 0;
-      color: #f0ebff;
-      font-weight: 700;
-      letter-spacing: 0.01em;
+      border-radius: 0 14px 14px 0; color: #f0ebff; font-weight: 700; letter-spacing: 0.01em;
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
+    }
+
+    .terminal-box {
+      background:#0b0f0b;
+      border-radius:18px;
+      border:3px solid #2e5f2e;
+      overflow:hidden;
+      box-shadow: 0 0 0 1px rgba(0,255,136,0.06) inset, 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    .terminal-top {
+      display:flex;
+      gap:6px;
+      padding:10px;
+      background:#132413;
+    }
+
+    .terminal-dot {
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:#2e5f2e;
+    }
+
+    .terminal-screen {
+      position: relative;
+      padding:12px;
+      font-family:monospace;
+      color:#00ff88;
+      font-size:0.82rem;
+      line-height:1.35;
+      white-space:pre-wrap;
+      min-height: 190px;
+    }
+
+    .terminal-screen::after {
+      content:"";
+      position:absolute;
+      right:14px;
+      bottom:14px;
+      width:8px;
+      height:1.2em;
+      background:#00ff88;
+      box-shadow: 0 0 8px rgba(0,255,136,0.5);
+      animation: blinkCursor 0.9s steps(1) infinite;
+      opacity:0;
+    }
+
+    .terminal-screen.typing::after {
+      opacity:1;
+    }
+
+    @keyframes blinkCursor {
+      0%, 50% { opacity: 1; }
+      50.01%, 100% { opacity: 0; }
+    }
+
+    .terminal-line {
+      display:block;
+      min-height:1.2em;
     }
   </style>
 </head>
@@ -567,9 +450,9 @@
         <div style="position:absolute;inset:0;background:radial-gradient(circle at 20% 20%, rgba(65,255,215,0.12), transparent 24%), radial-gradient(circle at 85% 15%, rgba(93,140,255,0.14), transparent 28%);pointer-events:none;"></div>
         <div style="position:absolute;inset:10px;border:1px solid rgba(98,255,214,0.18);border-radius:24px 18px 20px 16px;pointer-events:none;"></div>
         <div class="sticker" style="background:#0f1422;color:#a9f7e5;border-color:rgba(98,255,214,0.28);box-shadow:none;transform:none;">✦ protocolo de acceso • edición privada</div>
-        <h1 style="font-family:Inter,Segoe UI,sans-serif;color:#ecfbff;text-shadow:none;line-height:1.02;letter-spacing:-0.05em;"><span class="title-pop" style="background:transparent;border:1px solid rgba(98,255,214,0.22);color:#9ff7e2;padding:4px 10px 8px;transform:none;">Entrega especial</span><br><span style="color:#ffffff;">para Melani</span></h1>
+        <h1 style="font-family:Inter,Segoe UI,sans-serif;color:#ecfbff;text-shadow:none;line-height:1.02;letter-spacing:-0.05em;"><span class="title-pop" style="background:transparent;border:1px solid rgba(98,255,214,0.22);color:#9ff7e2;padding:4px 10px 8px;transform:none;">Archivo</span><br><span style="color:#ffffff;">no solicitado</span></h1>
         <p class="sub" style="color:#b8c7d9;max-width:38ch;">
-          Se ha preparado una entrega digital de carácter excepcional. Para continuar, seleccione una de las opciones autorizadas a continuación.
+          Se ha detectado contenido posiblemente irrelevante pero curioso. Proceder bajo su propio criterio.
         </p>
 
         <div class="cta-grid" id="choiceZone">
@@ -626,28 +509,28 @@
           <h2>Diagnóstico preliminar de Melani</h2>
           <span class="tag">modo hacker activado</span>
         </div>
-        <div style="background:#0b0f0b;border-radius:18px;border:3px solid #2e5f2e;overflow:hidden;">
-          <div style="display:flex;gap:6px;padding:10px;background:#132413;">
-            <span style="width:10px;height:10px;border-radius:50%;background:#2e5f2e"></span>
-            <span style="width:10px;height:10px;border-radius:50%;background:#2e5f2e"></span>
-            <span style="width:10px;height:10px;border-radius:50%;background:#2e5f2e"></span>
+        <div class="terminal-box">
+          <div class="terminal-top">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
           </div>
-          <div style="padding:14px;font-family:monospace;color:#00ff88;font-size:0.85rem;line-height:1.6;white-space:pre-wrap;">
-> Iniciando evaluación psicológica...
-> Voz interior: detectada (aunque la paciente lo niegue)
-> Prudencia: aparece a veces
-> Tono de voz: alto / potente / inconfundible
-> Riesgo de expulsión del salón: crítico
-> Lectura de libros prestados: pendiente eterno
-> Humor: sí tiene (aunque diga que no)
-> Resultado final: caso interesante pero estable
+          <div class="terminal-screen" id="retroTerminal" data-typed="false">
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
+            <span class="terminal-line"></span>
           </div>
         </div>
       </article>
 
       <article class="panel reveal">
         <div class="title-row">
-          <h2>El anterior fue un preliminar basado en meras hipótesis.</h2>
+          <h2>El anterior fue un diagnóstico preliminar basado en mera observación</h2>
           <span class="tag">evidencia actualizada</span>
         </div>
         <div class="meme-frame">
@@ -723,7 +606,84 @@
 
       <article class="panel reveal">
         <div class="title-row">
-          <h2>Cierre menos bromista</h2>
+          <h2>Y aunque haya días así...</h2>
+          <span class="tag">esto también pasa</span>
+        </div>
+        <div class="meme-frame" style="padding:8px;">
+          <video controls autoplay muted playsinline style="width:100%;border-radius:18px;">
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+          </video>
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2>o algunos otros días así...</h2>
+          <span class="tag">variaciones del mismo fenómeno</span>
+        </div>
+        <div class="meme-frame">
+          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjRoOXJyb2x4NTVha2Ruc3QyYmsxZnhsNzRjY3U0dnFzcDNhaDhzcSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/2UCt7zbmsLoCXybx6t/giphy.gif" alt="gif variación" />
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2></h2>
+          <span class="tag">dato persistente</span>
+        </div>
+        <div class="meme-frame">
+          <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YzljaXR5MTRiZ2xyZTBrNXR3NWFwMmJ4MWVzaGdlZjUxZ255N25ocSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l41ox0LeKTFstOd5m/giphy.gif" alt="gif adicional" />
+          <div class="meme-caption">Y aunque me botes de cada salón que visito, con tu ya clásico tono de "voz alto" (gritos) ...</div>
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2>O me hagas bullying cada que puedas...</h2>
+          <span class="tag">dato confirmado</span>
+        </div>
+        <div class="meme-frame">
+          <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3Z3d5dGk3bGFwdDc1MW51dGRseW5senIyNTJscmQxczh0aDdsazQzdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/GMctbNQSWQINIwp5Pe/giphy.gif" alt="gif bullying" />
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2>Quería NO desearte SUERTE</h2>
+          <span class="tag">dato importante</span>
+        </div>
+        <div class="meme-frame">
+          <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OXM3cXpuYjdlb2JpdTAzeTRrbmptcnNjZDg4M2N6eHV6aDdjbWJ1ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SfCCMqLmhVtYXZSGw6/giphy.gif" alt="gif suerte" />
+          <div class="meme-caption">porque no te hará falta, ya que talento y capacidad tienes</div>
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2>Como diría Benedetti...</h2>
+          <span class="tag">nota final</span>
+        </div>
+        <div class="meme-frame">
+          <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3cWgwNzEybHlheGhyZmVvaWI1bzNqeGh5NHlnd2gzMjV4cnQyYW84OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XyIu1eG7B1qOdLfMKa/giphy.gif" alt="gif benedetti" />
+          <div class="meme-caption">"buena edad para cambiar estatutos y horóscopos" y para CREER más en ti.</div>
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2>Y aunque digas:</h2>
+          <span class="tag">frase registrada</span>
+        </div>
+        <div class="meme-frame">
+          <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDc5Z2J5dGFyazAwNTVuejJyOTV2cndoYWJuNmk3YzV0bXVpMnQzNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/EzKtdDRrRzuWtR9g0p/giphy.gif" alt="gif frase" />
+          <div class="meme-caption">"Eres florero, mucha palabrería y demás..."</div>
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          
           <span class="tag">ahora sí hablo en serio</span>
         </div>
         <div class="message-box">
@@ -735,20 +695,31 @@
 
           <p>Se que no hace falta que te lo diga, pero como dirías tu "me vale": Se que eres buena persona y próximamente buena maestra, que te esfuerzas mucho por sacar el trabajo y la vida adelante, que hay días de bajada que puede que te afecten un poquito (que no se pasen de su justo límite).</p>
 
-          <p>No te deseo suerte porque se que capacidad y talento te sobran, lo que SÍ, es que como diría Benedetti, es buena edad para cambiar estatutos y horóscopos y confíes más en ti, en lo que que te hace particular/singular.</p>
+          
         </div>
       </article>
 
       <article class="panel reveal">
         <div class="title-row">
-          <h2>Despedida oficialmente corregida</h2>
+          <span class="tag">sin título</span>
+        </div>
+        <div class="message-box">
+          <p>También se que tienes las metas claras y que cuando estas focus sacas notas super altas (como buena ex-Nerd)</p>
+          <p>Que la dedicación que le pones a los enanos no es mera casualidad sino que habla de los principios y valores que vives a diario.</p>
+          <p>"El bien oculto llega más lejos".. No hacemos las cosas por un Wow o un aplauso, se que las haces porque te nace y porque el trabajo bien hecho ya tiene su fruto cuando ves a los niños ir aprendiendo y creciendo.</p>
+        </div>
+      </article>
+
+      <article class="panel reveal">
+        <div class="title-row">
+          <h2></h2>
           <span class="tag">error detectado</span>
         </div>
         <div class="final-card">
           <div class="message-box">
-            <p><strong>Feliz cumpleaños, <span class="scribble"><span class="wrong">Mari...</span></span> Melani.</strong></p>
+            <p><strong>🎉 Feliz cumpleaños, <span class="scribble"><span class="wrong">Mari...</span></span> Melani 🎉</strong></p>
             <p>Que la pases muy bien, que la vida te trate bonito, que nunca te falte Coca-Cola, y que este año venga con muchas cosas buenas para ti.</p>
-            <p><strong>Con cariño,</strong><br>[Tu nombre aquí]</p>
+            <p><strong>¡Ánimo!</strong><br><br><br>André</p>
           </div>
           <div class="chips">
             <span class="chip">sí tienes voz interior</span>
@@ -758,12 +729,15 @@
         </div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px;">
           <button class="btn-primary" onclick="spawnParty(28)">Lluvia de drama</button>
-          <button class="btn-secondary" onclick="toggleHidden('secretEnd')">Último archivo</button>
+          <button class="btn-secondary" onclick="toggleHidden('secretEnd')">Avisar a GDH</button>
         </div>
         <div class="hidden" id="secretEnd">
           <div class="divider"></div>
           <div class="message-box tiny">
-            Aquí puedes cambiar un GIF por una foto, un meme interno, una captura de chat o incluso un enlace a una canción. Todo está pensado para que se vea bonito en el celular.
+            <div class="meme-frame">
+            <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OTJveHdidHhiMWpycXk4cTZ5OTMwM2JnbXF6cng0Zmp0bzlmczdlNyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/WPBolYCqzs1Ru9ZPYo/giphy.gif" />
+            <div class="meme-caption">No avises a GDH porfa</div>
+          </div>
           </div>
         </div>
       </article>
@@ -807,21 +781,61 @@
     }
 
     function handleTicket(btn){
-      // animación tipo ticket
       btn.classList.add('ticket-anim');
-      setTimeout(()=>{
-        goToVale();
-      }, 500);
+      setTimeout(()=>{ goToVale(); }, 500);
     }
 
     function goToVale(){
-      // Scroll directo al bloque de "Vale oficial"
       const vale = document.getElementById('vale');
       if (vale) {
         vale.scrollIntoView({behavior:'smooth', block:'center'});
-        // efecto festivo
         spawnParty(30);
       }
+    }
+
+    const terminalLines = [
+      '> Iniciando evaluación psicológica...',
+      '> Voz interior: detectada (aunque la paciente lo niegue)',
+      '> Prudencia: aparece a veces',
+      '> Tono de voz: alto / potente / inconfundible',
+      '> Riesgo de expulsión del salón: crítico',
+      '> Lectura de libros prestados: pendiente eterno',
+      '> Humor: sí tiene (aunque diga que no)',
+      '> Resultado final: caso interesante pero estable'
+    ];
+
+    function typeRetroTerminal() {
+      const box = document.getElementById('retroTerminal');
+      if (!box || box.dataset.typed === 'true') return;
+      box.dataset.typed = 'true';
+      box.classList.add('typing');
+      const lineEls = Array.from(box.querySelectorAll('.terminal-line'));
+      let lineIndex = 0;
+
+      function typeLine() {
+        if (lineIndex >= terminalLines.length) {
+          setTimeout(() => box.classList.remove('typing'), 600);
+          return;
+        }
+        const text = terminalLines[lineIndex];
+        const el = lineEls[lineIndex];
+        let charIndex = 0;
+
+        function typeChar() {
+          el.textContent = text.slice(0, charIndex);
+          charIndex += 1;
+          if (charIndex <= text.length) {
+            setTimeout(typeChar, 22);
+          } else {
+            lineIndex += 1;
+            setTimeout(typeLine, 180);
+          }
+        }
+
+        typeChar();
+      }
+
+      typeLine();
     }
 
     function toggleHidden(id) {
@@ -829,7 +843,7 @@
     }
 
     function spawnParty(count = 14) {
-      const emojis = ['🎉','✨','🥤','♈','😂','🎂','💗'];
+      const emojis = ['🎉','✨','🥤','♈','😂','🎂'];
       for (let i = 0; i < count; i++) {
         const node = document.createElement('span');
         node.className = 'float-emoji';
@@ -857,6 +871,9 @@
               easing: 'cubic-bezier(.2,.7,.2,1)',
               fill: 'forwards'
             });
+            if (entry.target.querySelector && entry.target.querySelector('#retroTerminal')) {
+              setTimeout(typeRetroTerminal, 220);
+            }
             observer.unobserve(entry.target);
           }
         });
@@ -865,7 +882,38 @@
     }
 
     setupReveal();
+
+    // Play music when "momento serio" appears
+    const seriousPanel = document.querySelector('.serious-panel');
+    if (seriousPanel) {
+      const musicObserver = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const audio = document.getElementById('bgMusic');
+            if(audio){
+              audio.currentTime = 0;
+              audio.play().catch(()=>{});
+            }
+            musicObserver.disconnect();
+          }
+        });
+      }, {threshold:0.6});
+      musicObserver.observe(seriousPanel);
+    }
     setTimeout(() => spawnParty(8), 700);
+  </script>
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Autoplay fix for mobile
+    document.addEventListener('click', () => {
+      const audio = document.getElementById('bgMusic');
+      if (audio && audio.paused) {
+        audio.play().catch(()=>{});
+      }
+    }, { once: true });
   </script>
 </body>
 </html>
